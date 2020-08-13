@@ -7,7 +7,7 @@ This module contains a single class, called projectClient.
 The client connects to the server over a TCP connection, to send requests and receive response messages through the command line.
 
 **AWS Server**
-This module contains the code for the server to which the client connects and contains the following classes.
+This module contains the code for the server to which the client connects and contains the following classes:
 
 **ServerDriver**
 This class contains the main method of the server-side maven project. It first updates a table in the RDS database from a file of coma separated values which is stored in S3.  The main method then enters an infinite loop, accepting incoming TCP connections form clients, and spinning off a new thread to service the client. 
